@@ -1,9 +1,8 @@
 /* 项目启动的入口 */
-const app = require("./app");
+import app from "./app";
 
-const port = 4000;
-console.log("app", app)
-
+const port = 51129;
+ 
 app.listen(port, () => {
-  console.log("项目启动成功, http://localhost:", port);
+  console.log(`项目启动成功, http://127.0.0.1:${port}`);
 });
